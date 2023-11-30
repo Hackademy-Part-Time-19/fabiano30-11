@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        position: relative;
+        overflow-y: hidden;
+    }
+    .box{
+        background-image: url(download.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        transition: all 0.5s linear;
+        transform-origin: top right;
+        transform-style: preserve-3D;
+        transform:scale(0.1);
+        background-size: contain;
+        opacity: 0;
+    }
+    .box-scale {
+        transition: all 0.5s linear;
+    height: 100vh;
+    transform:scale(1.0);
+    background-image: url(download.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+    .Timer{
+        border: 1px solid red;
+        padding: 40px;
+    }
+    input{
+        padding: 5px;
+    }
+    button{
+        padding: 5px;
+        width: 100px;
+        color: white;
+        cursor: pointer;
+    }
+    h1{
+        color: white;
+        font-size: 50px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
+</style>
+<body>
+    <h1 id="countdown"></h1>
+    <div class="box" id="box">
+        <!-- <h1 id="Stato" style="display:none; position: absolute; top: 20%; left: 40%;"></h1> -->
+        
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
